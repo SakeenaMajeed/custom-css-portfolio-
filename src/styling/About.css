@@ -1,0 +1,117 @@
+.about-section {
+    background-color: #031c38;
+    padding: 4rem 2rem;
+    position: relative;
+  }
+  
+  .about-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+  
+  .about-image img {
+    width: 100%;
+    max-width: 400px;
+    max-height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .about-content {
+    color: white;
+    max-width: 700px;
+  }
+  
+  .about-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .about-roles {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .about-role {
+    background-color: #003366;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  .about-role:hover {
+    transform: translateY(-5px);
+    background-color: #191238;
+  }
+  
+  .role-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #f0a500;
+  }
+  
+  .role-description {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    opacity: 0.9;
+  }
+  
+  @media (max-width: 1024px) {
+    .about-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about-image {
+      margin-bottom: 2rem;
+    }
+  
+    .about-title {
+      font-size: 2rem;
+    }
+  
+    .about-content {
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about-title {
+      font-size: 1.8rem;
+    }
+  
+    .about-image img {
+      max-width: 100%;
+      max-height: 300px;
+    }
+  
+    .about-content {
+      padding: 0 1rem;
+    }
+  
+    .about-role {
+      padding: 0.8rem;
+    }
+  
+    .role-title {
+      font-size: 1rem;
+    }
+  
+    .role-description {
+      font-size: 0.85rem;
+    }
+  }

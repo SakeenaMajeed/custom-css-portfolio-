@@ -1,0 +1,167 @@
+.hero-container {
+    background-color: #031c38;
+  
+    min-height: 100vh;
+  
+    display: flex;
+    justify-content: space-between;
+  
+    align-items: center;
+    color: #f0f0f0;
+  
+    padding: 0 5%;
+  
+    animation: fadeIn 1s ease;
+  
+    flex-wrap: wrap;
+  
+    gap: 40px;
+  }
+  
+  .hero-content {
+    flex: 1 1 50%;
+  
+    padding: 20px;
+    text-align: left;
+    opacity: 0;
+  
+    animation: slideIn 1s forwards;
+    animation-delay: 0.5s;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #ffcc00;
+  }
+  
+  .hero-description {
+    font-size: 1.3rem;
+    line-height: 1.6;
+  
+    margin-bottom: 30px;
+    color: #d1d1d1;
+  }
+  
+  .hero-button {
+    background-color: #f0a500;
+  
+    color: #002147;
+    padding: 12px 24px;
+  
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(240, 165, 0, 0.4);
+  }
+  
+  .hero-button:hover {
+    background-color: #002147;
+    color: #ffcc00;
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(255, 204, 0, 0.5);
+  }
+  
+  .hero-image {
+    flex: 1 1 40%;
+  
+    max-width: 400px;
+    margin: 0 auto;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
+    border-radius: 50%;
+  
+    overflow: hidden;
+    height: 400px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .hero-image img {
+    width: 100%;
+  
+    height: auto;
+  
+    max-height: 100%;
+  
+    object-fit: cover;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 1.2rem;
+    margin-top: 1rem;
+    justify-content: flex-start;
+  }
+  
+  .social-icons a {
+    color: #f0f0f0;
+    font-size: 1.7rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+  
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 30px;
+      padding: 20px;
+    }
+  
+    .hero-content {
+      padding: 0;
+    }
+  
+    .hero-title {
+      font-size: 2.5rem;
+    }
+  
+    .hero-description {
+      font-size: 1.1rem;
+    }
+  
+    .hero-button {
+      padding: 10px 20px;
+    }
+  
+    .hero-image {
+      max-width: 90%;
+  
+      height: auto;
+    }
+  }

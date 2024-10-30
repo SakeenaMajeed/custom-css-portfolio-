@@ -1,0 +1,109 @@
+body {
+    background-color: #031c38;
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+  }
+  
+  .contact-container {
+    max-width: 600px;
+    width: 100%;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #007bff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    background-color: #002147;
+  }
+  
+  .contact-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .contact-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .contact-container input,
+  .contact-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .contact-container input:focus,
+  .contact-container textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .contact-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0056b3;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
+  }
+  
+  .contact-container button:hover {
+    background-color: #004080;
+    transform: translateY(-2px);
+  }
+  
+  @media (max-width: 768px) {
+    .contact-container {
+      padding: 15px;
+    }
+  
+    .contact-container h2 {
+      font-size: 1.8rem;
+    }
+  
+    .contact-container input,
+    .contact-container textarea {
+      font-size: 14px;
+    }
+  
+    .contact-container button {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-container {
+      max-width: 90%;
+      padding: 10px;
+    }
+  
+    .contact-container h2 {
+      font-size: 1.5rem;
+    }
+  
+    .contact-container input,
+    .contact-container textarea {
+      font-size: 13px;
+    }
+  
+    .contact-container button {
+      font-size: 13px;
+      padding: 10px;
+    }
+  }
